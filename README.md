@@ -13,7 +13,5 @@ Made with an emphasis on the VALORANT game. The Russian language is used in the 
 <h1>Authors:</h1>
 
 <h3>maQuizzy - js (https://github.com/maQuizzy)</h3>
-
 <h3>ArtKV & Moshka - html & css</h3>
-
 <h3>Sounds and pictures are taken from open sources.</h3>
