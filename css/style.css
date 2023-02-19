@@ -1,0 +1,158 @@
+@font-face {
+    font-family: customfont;
+    src: url(../Valorant.ttf);
+}
+
+input[type=checkbox] 
+{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+body
+{
+    min-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bg.png);
+    background-size: 512px 288px;
+    width: 512px;
+    height: 288px;
+}
+h1
+{
+    margin-top: 30px;
+    margin-left: 5px;
+    text-align: center;
+    color: #fa4454;
+    text-transform: none;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: customfont;
+    user-select: none;
+}
+
+p
+{
+    text-align: center;
+    color: #fa4454;
+    text-transform: none;
+    margin-right: 100px;
+    margin-top: 60px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-family: customfont;
+    user-select: none;
+}
+
+.div-a 
+{
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    width: 250px;
+    cursor: pointer;
+    user-select: text;
+    text-decoration: none;
+    font-family: customfont;
+    margin: auto;
+}
+
+.div-a {
+    transition: all 0.3s;
+    position: relative;
+  }
+  .div-a .btnoff {
+    transition: all 0.3s;
+    color: #FFF;
+  }
+
+  .div-a .btnoff:after {
+    transition: all 0.3s;
+    content: 'COnVECT';
+  }
+  .div-a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .div-a:hover .btnoff {
+    letter-spacing: 2px;
+ 
+  }
+  .div-a:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .div-a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .div-a:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+  .div-a:hover .btnoff:after{
+    content: 'CONNECT';
+  }
+
+
+
+.div-b 
+{
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    width: 250px;
+    cursor: pointer;
+    user-select: text;
+    text-decoration: none;
+    font-family: customfont;
+    margin: auto;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    position: relative;
+}
+
+.div-b::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 255, 197, 0.1);
+}
+.div-b .btnon:after{
+    content: 'CONNECTED';
+    color: rgba(0, 255, 197);
+    letter-spacing: 2px;
+}

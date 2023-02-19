@@ -1,0 +1,23 @@
+{
+    "name": "Brim VPN",
+    "description": "VPN by ArtKV and Quizzy",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+		"16": "img/16.png",
+		"24": "img/24.png",
+		"32": "img/32.png",
+		"48": "img/48.png",
+		"64": "img/64.png",
+		"128": "img/128.png"
+	},
+    "action": {
+		"default_popup": "popup.html"
+	},
+    "permissions": [
+		"proxy"
+	],
+    "background":{
+		"service_worker" : "./js/background.js"
+	}
+}
