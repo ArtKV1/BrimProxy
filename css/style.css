@@ -9,6 +9,21 @@ input[type=checkbox]
     top: -9999px;
     left: -9999px;
 }
+
+a{
+  text-decoration: none;
+  color: #fa4454;
+  position: relative;
+  bottom: 0;
+}
+
+a:hover{
+  color: rgba(0, 255, 197);
+  transition: all 0.2s;
+  position: relative;
+  bottom: 2px;
+}
+
 body
 {
     min-width: 200px;
@@ -52,7 +67,7 @@ p
     height: 50px;
     text-align: center;
     font-size: 25px;
-    width: 250px;
+    width: 486px;
     cursor: pointer;
     user-select: text;
     text-decoration: none;
@@ -67,6 +82,8 @@ p
   .div-a .btnoff {
     transition: all 0.3s;
     color: #FFF;
+    position: relative;
+    top: 2px;
   }
 
   .div-a .btnoff:after {
@@ -93,7 +110,7 @@ p
   }
   .div-a:hover .btnoff {
     letter-spacing: 2px;
- 
+    color: rgba(0, 255, 197);
   }
   .div-a:hover::before {
     opacity: 1; 
@@ -107,16 +124,28 @@ p
     width: 100%;
     height: 100%;
     z-index: 1;
-    transition: all 0.3s;
+    transition: all 0.5s;
     background-color: rgba(255,255,255,0.1);
   }
   .div-a:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
+    background-color: rgba(0, 255, 197);
   }
   .div-a:hover .btnoff:after{
     content: 'CONNECT';
   }
+  
+.div-a:active::after{
+    transition: all 0.1s;
+    opacity: 0.1; 
+    transform: scale(1, 1);
+    background-color: rgba(0, 255, 197);
+}
+
+
+
+
 
 
 
@@ -126,7 +155,7 @@ p
     height: 50px;
     text-align: center;
     font-size: 25px;
-    width: 250px;
+    width: 486px;
     cursor: pointer;
     user-select: text;
     text-decoration: none;
@@ -139,6 +168,12 @@ p
     border-top-color: rgba(255,255,255,0.5);
     border-bottom-color: rgba(255,255,255,0.5);
     position: relative;
+    bottom: 1px;
+}
+
+.div-b .btnon{
+  position: relative;
+  top: 2px;
 }
 
 .div-b::after {
@@ -149,10 +184,25 @@ p
     width: 100%;
     height: 100%;
     z-index: 1;
+    transition: all 2s;
     background-color: rgba(0, 255, 197, 0.1);
 }
 .div-b .btnon:after{
+    transition: all 2s;
     content: 'CONNECTED';
     color: rgba(0, 255, 197);
     letter-spacing: 2px;
+    position: relative;
+    top: 1px;
 }
+
+.div-b:hover:after{
+  background-color: #fa445311;
+}
+
+.div-b:hover .btnon:after{
+  content: 'DISCONNECT';
+  color: #fa4454;
+}
+
+
